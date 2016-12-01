@@ -1,0 +1,86 @@
+.slgf {
+	display: block;
+	max-width: 700px;
+	width: 100%;
+	padding: 20px 25px 5px;
+	border: 1px solid #e2e2e2;
+	border-radius: 3px;
+}
+
+.slgf-form-group {
+	width: 100%;
+	margin: 0 0 15px;
+}
+
+.slgf [for^="slgf_"] {
+	font-size: 14px;
+}
+
+.slgf [name^="slgf_"] {
+	background-color: #f7f7f7;
+	border: 1px solid #e2e2e2;
+	border-radius: 3px;
+	display: block;
+	font-size: 16px;
+	padding: 15px 20px;
+	width: 100%;
+	-webkit-transition: .2s ease;
+	transition: .2s ease;
+}
+
+.slgf [name^="slgf_"]:focus {
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	color: #333;
+	outline: 0;
+}
+
+.slgf input[type="submit"] {
+	background-color: #0070f8;
+	color: #fff;
+	-webkit-transition: .2s ease;
+	transition: .2s ease;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	margin-top: 5px;
+	border: 0;
+	font-size: 16px;
+	outline: 0;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 3px;
+	cursor: pointer;
+	outline-offset: -4px;
+}
+
+.slgf input[type="submit"]:hover,
+.slgf input[type="submit"]:focus {
+	color: rgba(255,255,255,0.9);
+	background-color: #005fe6;
+}
+
+.slgf input[type="submit"]:focus {
+	outline: thin dotted;
+}
+
+.slgf-notification {
+	border-radius: 2px;
+	display: none;
+	padding: 15px;
+}
+
+.slgf-notification.success {
+	background-color: #3fe23f;
+	color: white;
+}
+
+.slgf-notification.show {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.slgf input[type="submit"] {
+		display: block;
+		width: 100%;
+	}
+}
