@@ -33,8 +33,26 @@ add_action( 'init', 'slgf_init' );
 function slgf_rewrite_flush() {
 	slgf_register_customer_cpt();
 	flush_rewrite_rules();
+	set_transient( 'slgf-shortcode-notice', true, 5 );
 }
 register_activation_hook( __FILE__, 'slgf_rewrite_flush' );
+
+/**
+ * Shortcode notice on activation.
+ *
+ * @since  1.0.0
+ */
+function slgf_shortcode_admin_notice() {
+	if ( get_transient( 'slgf-shortcode-notice' ) ) {
+		?>
+		<div class="updated notice is-dismissible">
+			<p>Use the shortcode <code>[slgf_form]</code> to get started!</p>
+		</div>
+		<?php
+		delete_transient( 'slgf-shortcode-notice' );
+	}
+}
+add_action( 'admin_notices', 'slgf_shortcode_admin_notice' );
 
 /**
  * Enqueue frontend scripts & styles.
