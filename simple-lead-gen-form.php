@@ -114,10 +114,6 @@ function slgf_form( $attr ) {
 	?>
 	<form id="slgf" class="slgf" action="" method="post" enctype="multipart/form-data">
 
-		<div class="slgf-form-group slgf-notification">
-
-		</div>
-
 		<div class="slgf-form-group">
 			<label for="slgf_name"><?php echo esc_html( $attr['label_name'] ); ?></label>
 			<input type="text" id="slgf_name" name="slgf_name" maxlength="<?php echo esc_html( $attr['maxlength_name'] ); ?>" required>
@@ -215,7 +211,7 @@ function slgf_process() {
 		)
 	);
 
-	echo 'Success!';
+	echo 'Your information has been submitted!';
 
 	wp_die();
 }

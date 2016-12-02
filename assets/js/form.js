@@ -30,24 +30,14 @@
 			success: function( response ) {
 
 				// Show notification
-				notification.html( response ).addClass('show success');
+				form.html( response ).addClass('submitted');
 
 				// Scroll to top of form
 				$('html, body').animate({
-					scrollTop: $("#slgf").offset().top -100
-				}, 200);
-
-				// Hide notification
-				setTimeout(dismissFormNotification, 3000);
-
-				// Clear user data
-				form.find("[name^=slgf_]").val("");
+					scrollTop: form.offset().top -300
+				}, 1000);
 			}
 		})
 	});
-
-	function dismissFormNotification(){
-		notification.removeClass('show success');
-	}
 
 })( jQuery );
