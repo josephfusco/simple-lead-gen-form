@@ -213,7 +213,7 @@ function slgf_process() {
 
 	echo 'Your information has been submitted!';
 
-	wp_die();
+	exit();
 }
 add_action( 'wp_ajax_slgf_process_form', 'slgf_process' );
 add_action( 'wp_ajax_nopriv_slgf_process_form', 'slgf_process' );
