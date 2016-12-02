@@ -232,7 +232,7 @@ function slgf_register_customer_cpt() {
 		'show_in_menu'         => true,
 		'show_in_admin_bar'    => true,
 		'menu_position'        => null,
-		'menu_icon'            => 'dashicons-id-alt',
+		'menu_icon'            => 'dashicons-admin-users',
 		'can_export'           => true,
 		'delete_with_user'     => false,
 		'hierarchical'         => false,
