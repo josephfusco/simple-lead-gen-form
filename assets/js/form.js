@@ -1,7 +1,6 @@
 (function($) {
 
-	var form          = $("#slgf");
-	var notification  = $(".slgf-notification");
+	var form = $("#slgf");
 
 	form.submit(function (e) {
 
