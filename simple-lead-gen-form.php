@@ -5,7 +5,7 @@
  * Description:   Add a simple lead generation form to your website, collect & manage information from potential customers.
  * Version:       1.0.0
  * Author:        Joseph Fusco
- * Author URI:    http://josephfus.co
+ * Author URI:    https://josephfus.co
  * License:       GPLv2 or later
  * Text Domain:   simple-lead-gen-form
  */
